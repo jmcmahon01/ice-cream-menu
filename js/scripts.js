@@ -12,9 +12,12 @@ function handleForm(event) {
     paragraph.append(element.value);
     document.body.append(paragraph);
   });
+  const form = document.getElementById('iceCreamMenu');
+  form.setAttribute("class", "hidden");
 }
 
 window.addEventListener("load", function () {
   document.querySelector("form#iceCreamMenu").addEventListener("submit", handleForm);
+
 });
 
