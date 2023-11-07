@@ -8,9 +8,9 @@ function handleForm(event) {
   document.body.append(resultHeading);
 
   selectionsArray.forEach(function (element) {
-    const paragraph = document.createElement("p");
-    paragraph.append(element.value);
-    document.body.append(paragraph);
+    const ul = document.createElement("ul");
+    ul.append(element.value);
+    document.body.append(ul);
   });
   const form = document.getElementById('iceCreamMenu');
   form.setAttribute("class", "hidden");
